@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>movimientos</title>
+    </head>
+    <style>
+body {
+            background-color: #fff; 
+            color: #000; 
+            font-family: Arial, sans-serif; 
+        }
+        #opciones {
+            background-color: #000; 
+            padding: 10px; 
+            text-align: center;
+        }
+        button {
+            color: #fff;
+            margin: 0 10px; 
+            padding: 8px 16px;
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+        #estado {
+            background-color: #9e9c8c; 
+        }
+        #movimientos{
+            background-color: #dfc440; 
+            color: #000000;
+        }
+        #contenido {
+            width: 300px; 
+            margin: 50px auto; 
+            padding: 20px;
+            border: 1px solid #000; 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        #nombre,#saldo {
+            font-size: 16px; 
+        }
+        img{
+            position: relative;
+            bottom: 10px;
+            width: 30%;
+            height: 30%;
+        }
+    </style>
+<body>
+    <div id="opciones">
+        <button id="estado" onclick="estado()">Estado</button>
+        <button id="movimientos" onclick="movimientos()">Movimientos</button>
+    </div>
+    <div id="contenido">
+        <p id="nombre">JeanPiero Huamaní</p>
+        <p id="saldo">$300.10</p>
+    </div>
+    <img src="imagenes/tarjeta.webp">
+    <script>
+        function estado(){
+            window.location.href="estado.pl";
+        }
+        function movimientos(){
+            window.location.href="movimientos.pl";
+        }
+    </script>
+</body>
+</html>

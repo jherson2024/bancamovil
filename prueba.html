@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de IoT para el Hogar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .sensor {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de IoT para el Hogar</h1>
+        <div class="sensor">
+            <h2>Temperatura</h2>
+            <p>La temperatura actual en la sala de estar es <span id="temp">20°C</span>.</p>
+        </div>
+        <div class="sensor">
+            <h2>Luces</h2>
+            <p>Las luces están <span id="lights">apagadas</span>.</p>
+            <button onclick="toggleLights()">Encender/Apagar Luces</button>
+        </div>
+        <div class="sensor">
+          <h2>Cortinas</h2>
+          <p>Las cortinas están <span id="temp">abiertas</span>.</p>
+      </div>
+      <div class="sensor">
+        <h2>Jardín</h2>
+        <p>Las plantas necesitan <span id="temp">agua</span>.</p>
+    </div>
+    </div>
+
+    <script>
+        function toggleLights() {
+            var lightsStatus = document.getElementById("lights");
+            if (lightsStatus.innerText === "apagadas") {
+                lightsStatus.innerText = "encendidas";
+            } else {
+                lightsStatus.innerText = "apagadas";
+            }
+            // Aquí iría el código para controlar las luces a través de IoT
+            // Por ahora, solo cambiamos el texto para simular el cambio de estado
+        }
+    </script>
+</body>
+</html>

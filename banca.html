@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>banca</title>
+    </head>
+    <style>
+  
+  body {
+            background-color: #fff;
+            color: #000; 
+        }
+        form {
+            width: 300px;
+            margin: 50px auto; 
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        #title {
+            font-size: 20px; 
+            text-align: center;
+        }
+        #numero,#clave {
+            font-size: 16px; 
+        }
+        input {
+            width: 100%;
+            padding: 8px; 
+            margin-bottom: 10px; 
+            box-sizing: border-box; 
+            border: 1px solid #000; 
+            border-radius: 5px; 
+        }
+        #submit {
+            background-color: #000; 
+            color: #fff; 
+            cursor: pointer; 
+        }
+        img{
+            position: relative;
+            bottom: 185px;
+            width: 30%;
+            height: 30%;
+        }
+    </style>
+<body>
+<form action="banca.pl">
+    <p id="title">Ingreso clientes</p>
+    <p id="numero">Numero de tarjeta</p>
+    <input type="text" id="input_numero" name="numero">
+    <p id="clave">Clave</p>
+    <input type="password" id="input_clave" name="clave">
+    <input type="submit" id="submit" value="Ingresar">
+</form>
+<img src="imagenes/tarjeta.webp">
+</body>
+</html>

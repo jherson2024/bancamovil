@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tarjetas</title>
+    </head>
+    <style>
+  body {
+            background-color: #fff; 
+            color: #000; 
+            font-family: Arial, sans-serif; 
+        }
+
+        div {
+            background-color: #d9caca; 
+            padding: 10px;
+            text-align: center; 
+        }
+        a {
+            color: #fff; 
+            margin: 0 10px;
+            text-decoration: none; 
+            font-weight: bold;
+        }
+        form {
+            position: relative;
+            bottom: 20px;
+            width: 300px; 
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #title {
+            font-size: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px; 
+        }
+        input {
+            width: 100%; 
+            padding: 8px; 
+            margin-bottom: 10px; 
+            box-sizing: border-box; 
+            border: 1px solid #000; 
+            border-radius: 5px; 
+        }
+        #submit {
+            background-color: #000; 
+            color: #fff; 
+            cursor: pointer; 
+            font-weight: bold; 
+        }
+        #tarjetas {
+            background-color: #fff; 
+            color: #000; 
+            border-radius: 5px; 
+            padding: 5px 10px; 
+        }
+        img{
+            position: relative;
+            bottom: 200px;
+            width: 30%;
+            height: 30%;
+        }
+        #numero{
+        display:inline-block;
+    }
+    button{
+        background-color: rgb(248, 218, 237);
+        position: relative;
+        left: 40px;
+        display:inline-block;
+    }
+    </style>
+<body>
+    <div>
+        <p id="title">Registro</p> 
+        <a id="clientes" href="clientes.html">Clientes</a>
+        <a id="cuentas" href="cuentas.html">Cuentas</a>
+        <a id="tarjetas" href="tarjetas.html">Tarjetas</a>
+    </div>
+<form action="tarjetas.pl">
+    <p id="numero">Numero de tarjeta</p>
+    <button type="button" onclick="numeroAleatorio()">aleatorio</button>
+    <input type="text" id="input_numero" name="numero">
+    <p id="clave">Clave</p>
+    <input type="text" id="input_clave" name="clave">
+    <input type="submit" id="submit" value="Registrar">
+</form>
+<img src="imagenes/tarjeta.webp">
+</body>
+<script>
+    function numeroAleatorio() {
+        let numeroAleatorio = Math.floor(1e15 + Math.random() * 9e15).toString().slice(0, 16);
+        document.getElementById('input_numero').value = numeroAleatorio;
+    }
+</script>
+</html>

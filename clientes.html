@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clientes</title>
+    </head>
+    <style>
+  body {
+            background-color: #fff; 
+            color: #000; 
+            font-family: Arial, sans-serif; 
+        }
+        div {
+            background-color: #d9caca;
+            padding: 10px; 
+            text-align: center; 
+        }
+        a {
+            color: #fff; 
+            margin: 0 10px; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        form {
+            position: relative;
+            bottom: 20px;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #000; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #title {
+            font-size: 20px;
+            text-align: center; 
+        }
+        p {
+            font-size: 16px; 
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #000; 
+            border-radius: 5px; 
+        }
+        input[type="submit"] {
+            background-color: #000; 
+            color: #fff; 
+            cursor: pointer; 
+            font-weight: bold; 
+        }
+        #clientes {
+            background-color: #fff;
+            color: #000;
+            border-radius: 5px; 
+            padding: 5px 10px; 
+        }
+        img{
+            position: relative;
+            bottom: 385px;
+            width: 30%;
+            height: 30%;
+        }
+    </style>
+<body>
+    <div>
+        <p id="title">Registro</p> 
+        <a id="clientes" href="clientes.html">Clientes</a>
+        <a id="cuentas" href="cuentas.html">Cuentas</a>
+        <a id="tarjetas" href="tarjetas.html">Tarjetas</a>
+    </div>
+<form action="clientes.pl">
+    <p id="dni">DNI</p>
+    <input type="text" id="input_dni" name="dni">
+    <p id="nombre">Nombre</p>
+    <input type="text" id="input_nombre" name="nombres">
+    <p id="apellido1">Primer apellido</p>
+    <input type="text" id="input_apellido1" name="apellido1">
+    <p id="apellido2">Segundo apellido</p>
+    <input type="text" id="input_apellido2" name="apellido2">
+    <input type="submit" id="submit" value="Registrar">
+</form>
+<img src="imagenes/tarjeta.webp">
+</body>
+</html>

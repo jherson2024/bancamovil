@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index</title>
+    </head>
+    <style>
+  
+  body {
+            background-color: #fff; /* Set background color to white */
+            color: #000; /* Set text color to black */
+        }
+
+        form {
+            width: 300px; /* Set the width of the form */
+            margin: 50px auto; /* Center the form on the page */
+            padding: 20px;
+            border: 1px solid #000; /* Add a black border to the form */
+            border-radius: 10px; /* Add some border-radius for rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+        }
+
+        #title {
+            font-size: 20px; /* Set the font size for the title */
+            text-align: center; /* Center the title text */
+        }
+
+        #numero,
+        #clave {
+            font-size: 16px; /* Set the font size for other paragraphs */
+        }
+
+        input {
+            width: 100%; /* Make the input fields take up the full width of the container */
+            padding: 8px; /* Add some padding to the input fields */
+            margin-bottom: 10px; /* Add some space between input fields */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            border: 1px solid #000; /* Add a black border to the input fields */
+            border-radius: 5px; /* Add some border-radius for rounded corners */
+        }
+
+        input[type="submit"] {
+            background-color: #000; /* Set background color of the submit button to black */
+            color: #fff; /* Set text color of the submit button to white */
+            cursor: pointer; /* Change cursor to a pointer on hover */
+        }
+        img{
+            position: relative;
+            bottom: 185px;
+            width: 30%;
+            height: 30%;
+        }
+    </style>
+<body>
+<form action="login.pl">
+    <p id="title">Ingreso usuarios</p>
+    <p id="usuario">Usuario</p>
+    <input type="text" id="input_usuario" name="usuario">
+    <p id="clave">Clave</p>
+    <input type="password" id="input_clave" name="clave">
+    <input type="submit" id="submit" value="Ingresar">
+</form>
+<img src="imagenes/tarjeta.webp">
+</body>
+</html>
