@@ -46,7 +46,7 @@ $consulta_su_cuenta_id->execute($cuenta_movimiento);
 my ($su_cuenta_id) = $consulta_su_cuenta_id->fetchrow_array;
     my $su_cuenta = $dbh->prepare("INSERT INTO movimientos(tarjeta_id,cuenta_id,monto,tipo)
  VALUES(?,?,?,?);");
-$su_cuenta->execute($su_tarjeta_id,$su_cuenta_id,$monto,$tipo*-1,$su_tarjeta_id);
+$su_cuenta->execute($su_tarjeta_id,$su_cuenta_id,$monto,$tipo*-1);
     $alerta="Movimiento hecho";
 } elsif($monto>0){
     $alerta="No se encontro la cuenta a hacer movimiento!";
